@@ -9,3 +9,6 @@ class Server:
     
     def addEvent(self, event: str):
         self.events.append(event)
+    
+    def isPaid(self) -> bool:
+        return self.paid

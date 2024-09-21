@@ -20,11 +20,9 @@ class Babel:
             system_instruction="You are Babel, the friendly Discord translation service."
         )
     
-    def serverPaid(self, langServer) -> bool:
-        return langServer.paid
     
     def addLanguageServer(self, langServer):
-        if self.serverPaid(langServer):
+        if langServer.isPaid():
             self.languageServers.append(langServer)
             logging.info(f"Added language server: {langServer}")
         else:

@@ -14,10 +14,13 @@ class Babel:
         else:
             logging.warning(f"Failed to add language server: {langServer} (not paid)")
     
-    def server(self):
-        pass
+    def translateService(self, message: str, sourceLang: str, targetLang: str):
         # some API call
+        return f"Translated '{message}' from {source_lang} to {target_lang}"
     
-    def provideServer(self):
+    def provideService(self, message: str, targetLang: str):
         for server in self.languageServers:
-            service(server)
+            while server.events:
+                event = server.events.popleft()
+                logging.info(f"Processing Event: {event} for {server}")
+                translatedMessage = self.translateService(event, server.language, targetLang)

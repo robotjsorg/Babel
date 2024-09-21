@@ -1,14 +1,11 @@
+from collections import deque
+
 class Server:
-    def __init__(self, name, paid=False):
+    def __init__(self, name: str, language: str):
         self.name = name
+        self.language = language
+        self.events = deque()
         self.paid = False
     
-    def payMonthly(self) -> bool:
-        # api call with stripe perhaps
-        if pay $5 monthly:
-            self.paid = True
-        
-        if self.paid:
-            return True
-        else:
-            return False
+    def addEvent(self, event: str):
+        self.events.append(event)

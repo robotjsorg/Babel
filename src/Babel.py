@@ -31,7 +31,7 @@ class Babel:
             logging.warning(f"Failed to add language server: {langServer} (not paid)")
     
     def translateService(self, message: str, sourceLang: str, targetLang: str):
-        
+
         prompt = f"Translate from {sourceLang} to {targetLang}: {message}"
         chat_session = self.model.start_chat(history=[{"role": "user", "parts": [prompt]}])
         response = chat_session.send_message("Translate")

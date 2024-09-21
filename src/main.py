@@ -1,6 +1,7 @@
 from Server import Server
 from Babel import Babel
-import sys
+
+
 def main():
     server1 = Server(name="Server1", language="English")
     server1.paid = True
@@ -11,8 +12,6 @@ def main():
 
     translated_message = babel.translateService(input(str()), "English", "Spanish")
     print(f"Translated Message: {translated_message}")
-    register(
-)  
 
 if __name__ == "__main__":
     main()

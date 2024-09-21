@@ -4,6 +4,7 @@ import google.generativeai as genai
 class Babel:
     def __init__(self):
         self.languageServers = []
+        genai.configure(api_key="AIzaSyA7DBv7BrmTVZWzt6Gv7LjVhDd_ehHtIp4")
 
         generation_config = {
             "temperature": 0.2,

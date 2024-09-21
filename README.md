@@ -10,5 +10,3 @@ Key Features:
 
 Join the Global Gaming Community Today!
 Invite Babel to your Discord server and experience the power of unified communication.
-
-    

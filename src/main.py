@@ -11,6 +11,8 @@ def main():
 
     translated_message = babel.translateService(input(str()), "English", "Spanish")
     print(f"Translated Message: {translated_message}")
+    register(
+)  
 
 if __name__ == "__main__":
     main()

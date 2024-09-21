@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 /venv
 .env
 *.pyc
+=======
+venv/
+>>>>>>> aedd4ea (made Model)

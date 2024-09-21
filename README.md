@@ -10,3 +10,8 @@ Key Features:
 
 Join the Global Gaming Community Today!
 Invite Babel to your Discord server and experience the power of unified communication.
+
+How it Works:
+cd into src
+run python3 main.py
+enter in "" something to translate
